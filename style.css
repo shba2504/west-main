@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+/* MODAL */
+
+.modal::backdrop {
+    background: rgb(0 0 0 /.3);
+}
+
+.modal {
+    padding: 1em;
+    max-width: 40ch;
+    border: 0;
+    background-color: hsl(50, 10%, 95%);
+}
+
+.modal > h2, .modal > p {
+    text-align: center;
+}
+
+.modal > h2 {
+    font-weight: 200;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.modal > p {
+    padding: 0 2em 1em 2em;
+}
+
+.offer {
+    text-align: center;
+}
+
+.offer > p, .privacy {
+    text-decoration: underline;
+}
+
+#email {
+    display: block;
+    width: 80%;
+    padding: 1em;
+    margin: auto;
+    outline: none;
+    border: 1px solid hsl(0,0%,85%);
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.sign-up {
+    display: block;
+    padding: 1em 0 0 0;
+    margin: auto;
+}
+
+.signup-button {
+    padding: 1em 0 1em 0;
+    width: 87%;
+    opacity: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
