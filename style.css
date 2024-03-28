@@ -65,9 +65,40 @@ body {
 
 /* BANNER */
 
+.top-banner {
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* NAVBAR */
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 22px;
+    height: 70px;
+}
+
 /* MOBILE NAV */
+
+.menu-search {
+    display: flex;
+    align-items: center;
+    gap: .4em;
+}
+
+.person-cart {
+    display: flex;
+    align-items: center;
+    gap: .4em;
+}
 
 /* HERO */
 
