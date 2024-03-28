@@ -63,3 +63,42 @@ body {
     letter-spacing: 1px;
 }
 
+/* BANNER */
+
+/* NAVBAR */
+
+/* MOBILE NAV */
+
+/* HERO */
+
+.hero-container {
+    background-image: url(/images/outdoor.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.shop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shop-container h1 {
+    color: white;
+    font-size: 52px;
+}
+
+.shop-btn {
+    padding: 1em 3em 1em 3em;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 18px;
+    background-color: hsl(50, 10%, 95%)
+}
