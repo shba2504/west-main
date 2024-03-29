@@ -141,27 +141,27 @@ body {
 
 /* SHOP BY ROOM */
 
-.room-container > h2{
+.shop-wrapper > h2{
     text-align: center;
     font-weight: 300;
     margin-bottom: 0;
 }
 
-.shop-room {
+.shop {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 1.5em;
     gap: .5em;
 }
 
-.room {
+.shop-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.room img {
+.shop-item img {
     width: 100%;
     height: 100%;
 }
