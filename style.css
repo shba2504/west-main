@@ -165,3 +165,34 @@ body {
     width: 100%;
     height: 100%;
 }
+
+/* OUTDOOR FEATURE */
+
+.outdoor-feature {
+    background-image: url(/images/outdoor-feature.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+/* OUTDOOR ESSENTIALS */
+
+.outdoor-container {
+    display: grid;
+    padding: 1.5em;
+}
+
+.essentials img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ORGANIZATION */
+
+.organization-container {
+    background-image: url(/images/organization.jpg);
+}
