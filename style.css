@@ -229,6 +229,16 @@ body {
 
 /* DESIGN */
 
+.design-item {
+    background-image: url(/images/tabletop.jpg);
+}
+.design-item2 {
+    background-image: url(/images/registry.jpg);
+}
+
+.design-item3 {
+    background-image: url(/images/home-design.jpg);
+}
 
 /* AWARD-WINNING */
 
