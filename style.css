@@ -168,15 +168,16 @@ body {
 
 /* OUTDOOR FEATURE */
 
-.outdoor-feature {
+.feature-container {
     background-image: url(/images/outdoor-feature.jpg);
     width: 100%;
-    height: 400px;
-    background-size: contain;
+    height: 100%;
+}
+
+.outdoor-feature {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
 }
 
 /* OUTDOOR ESSENTIALS */
@@ -203,7 +204,7 @@ body {
 /* GARDEN */
 
 .garden-feature {
-    background-image: url(/images/botanicals2.jpg);
+    background-image: url(/images/botanicals.jpg);
     width: 100%;
     height: 400px;
     background-size: contain;
@@ -239,6 +240,9 @@ body {
 
 /* INSPIRATION */
 
+.inspiration {
+    padding: 1.5em;
+}
 
 /* SUBSCRIBE */
 
