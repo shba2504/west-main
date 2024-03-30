@@ -141,7 +141,7 @@ body {
 
 /* SHOP BY ROOM */
 
-.shop-wrapper > h2{
+.shop-wrapper h2{
     text-align: center;
     font-weight: 300;
     margin-bottom: 0;
@@ -161,7 +161,7 @@ body {
     align-items: center;
 }
 
-.shop-item img {
+.shop-item img, .design-item img, .inspiration img {
     width: 100%;
     height: 100%;
 }
@@ -181,18 +181,79 @@ body {
 
 /* OUTDOOR ESSENTIALS */
 
-.outdoor-container {
-    display: grid;
+.outdoor-container, .design {
     padding: 1.5em;
+}
+
+.essentials, .design {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5em;
+}
+
+.essentials h2 {
+    text-align: center;
+    font-weight: 300;
 }
 
 .essentials img {
     width: 100%;
-    height: 100%;
+}
+
+/* GARDEN */
+
+.garden-feature {
+    background-image: url(/images/botanicals2.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
 }
 
 /* ORGANIZATION */
 
 .organization-container {
     background-image: url(/images/organization.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+/* DESIGN */
+
+
+/* AWARD-WINNING */
+
+.award-container {
+    background-color: hsl(50, 10%, 95%);
+    padding: 1.5em;
+    text-align: center;
+}
+
+/* INSPIRATION */
+
+
+/* SUBSCRIBE */
+
+footer {
+    background-color: hsl(50, 10%, 95%);
+}
+
+.form-container {
+    padding: 1.5em;
+}
+
+.form-container h4 {
+    text-align: center;
+}
+
+.input-items {
+    display: flex;
 }
