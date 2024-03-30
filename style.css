@@ -254,13 +254,10 @@ body {
     padding: 1.5em;
 }
 
-/* SUBSCRIBE */
+/* FOOTER */
 
 footer {
     background-color: hsl(50, 10%, 95%);
-}
-
-.form-container {
     padding: 1.5em;
 }
 
