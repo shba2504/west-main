@@ -4,6 +4,19 @@ body {
   font-weight: 300;
 }
 
+button {
+    padding: 1em 0 1em 0;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-weight: 200;
+}
+
 /* MODAL */
 
 .modal::backdrop {
@@ -22,7 +35,6 @@ body {
 }
 
 .modal > h2 {
-    font-weight: 200;
     padding-left: .5em;
     padding-right: .5em;
 }
@@ -56,11 +68,7 @@ body {
 }
 
 .signup-button {
-    padding: 1em 0 1em 0;
     width: 87%;
-    opacity: 100%;
-    font-size: 14px;
-    letter-spacing: 1px;
 }
 
 /* BANNER */
@@ -148,7 +156,6 @@ a {
 
 .shop-wrapper h2 {
     text-align: center;
-    font-weight: 300;
     margin-bottom: 0;
 }
 
@@ -204,7 +211,6 @@ a {
 
 .essentials h2 {
     text-align: center;
-    font-weight: 300;
 }
 
 .essentials img {
@@ -255,9 +261,6 @@ a {
     display: flex;
     align-items: center;
     gap: .5em;
-}
-.new-arrivals-text h2 {
-    font-weight: 300;;
 }
 
 .snaps-inline {
@@ -335,4 +338,11 @@ footer {
 
 .input-items {
     display: flex;
+}
+
+.input-items button {
+    width: 30%;
+    background-color: black;
+    color: white;
+    border: none;
 }
