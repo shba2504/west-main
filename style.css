@@ -5,12 +5,13 @@ body {
 }
 
 button {
-    padding: 1em 0 1em 0;
+    padding: .5em 0 .5em 0;
     width: 50%;
     font-size: 1rem;
     cursor: pointer;
     opacity: 0.8;
     letter-spacing: 1px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -144,10 +145,7 @@ a {
 
 .shop-btn {
     padding: 1em 3em 1em 3em;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
     border: none;
-    cursor: pointer;
-    letter-spacing: 1px;
     font-size: 18px;
     background-color: hsl(50, 10%, 95%)
 }
@@ -302,6 +300,10 @@ a {
     text-align: center;
 }
 
+.award-container button{
+    width: 250px;
+}
+
 /* INSPIRATION */
 
 .inspiration {
@@ -340,9 +342,14 @@ footer {
     display: flex;
 }
 
+input {
+    font-size: .9rem;
+}
+
 .input-items button {
     width: 30%;
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     color: white;
     border: none;
+    font-size: .9rem;
 }
