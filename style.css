@@ -91,6 +91,11 @@ body {
     font-size: 26px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* MOBILE NAV */
 
 .menu-search {
@@ -141,7 +146,7 @@ body {
 
 /* SHOP BY ROOM */
 
-.shop-wrapper h2{
+.shop-wrapper h2 {
     text-align: center;
     font-weight: 300;
     margin-bottom: 0;
@@ -159,6 +164,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.shop-item:hover {
+    border: 1px solid black;
 }
 
 .shop-item img, .design-item img, .inspiration img {
@@ -235,9 +245,25 @@ body {
     inline-size: 31%;
 }
 
+.new-arrivals-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-arrivals-text {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.new-arrivals-text h2 {
+    font-weight: 300;;
+}
+
 .snaps-inline {
     scroll-snap-type: inline mandatory;
 }
+
 
 /* ORGANIZATION */
 
