@@ -214,6 +214,31 @@ body {
     background-repeat: no-repeat;
 }
 
+/* NEW ARRIVALS */
+
+.new-arrivals-container {
+    padding: 1.5em;
+}
+
+.new-arrivals {
+    display: grid;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.new-arrivals-items {
+    display: flex;
+    gap: .4rem;
+}
+
+.new-arrivals-items img {
+    inline-size: 31%;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
 /* ORGANIZATION */
 
 .organization-container {
@@ -251,7 +276,24 @@ body {
 /* INSPIRATION */
 
 .inspiration {
-    padding: 1.5em;
+    padding: 1.5em 1.5em 0 1.5em;
+}
+
+.inspiration-item-container {
+    overflow-x: auto;
+    padding-bottom: 1.5em;
+}
+
+.inspiration-item {
+    display: flex;
+    gap: .5rem;
+}
+
+.inspiration-item img {
+    width: 40%;
+    height: 100%;
+    aspect-ratio: 11 / 9;
+    object-fit: cover;
 }
 
 /* FOOTER */
