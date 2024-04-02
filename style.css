@@ -18,6 +18,22 @@ h2 {
     font-weight: 200;
 }
 
+.feature-container h1 {
+    font-weight: 400;
+}
+
+.hero-container, .feature-container, .garden-feature, .organization-container {
+    background-position-x: 40%;
+    background-position-y: 50%;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* MODAL */
 
 .modal::backdrop {
@@ -123,13 +139,6 @@ a {
 
 .hero-container {
     background-image: url(/images/outdoor.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
 }
 
 .shop-container {
@@ -185,8 +194,6 @@ a {
 
 .feature-container {
     background-image: url(/images/outdoor-feature.jpg);
-    width: 100%;
-    height: 100%;
 }
 
 .outdoor-feature {
@@ -219,13 +226,12 @@ a {
 
 .garden-feature {
     background-image: url(/images/botanicals.jpg);
-    width: 100%;
-    height: 400px;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
+
+}
+
+.garden-feature button {
+    width: 300px;
+    border: none;
 }
 
 /* NEW ARRIVALS */
@@ -270,13 +276,16 @@ a {
 
 .organization-container {
     background-image: url(/images/organization.jpg);
-    width: 100%;
-    height: 400px;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
+}
+
+.organization-container h1 {
+    font-weight: 300;
+    color: white;
+}
+
+.organization-container button {
+    width: 300px;
+    border: none;
 }
 
 /* DESIGN */
@@ -300,7 +309,7 @@ a {
     text-align: center;
 }
 
-.award-container button{
+.award-container button {
     width: 250px;
 }
 
