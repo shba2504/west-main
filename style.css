@@ -5,360 +5,371 @@ body {
 }
 
 button {
-    padding: .5em 0 .5em 0;
-    width: 50%;
-    font-size: 1rem;
-    cursor: pointer;
-    opacity: 0.8;
-    letter-spacing: 1px;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+  padding: 0.5em 0 0.5em 0;
+  width: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .feature-container h1 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
-.hero-container, .feature-container, .garden-feature, .organization-container {
-    background-position-x: 40%;
-    background-position-y: 50%;
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero-container,
+.feature-container,
+.garden-feature,
+.organization-container {
+  background-position-x: 50%;
+  background-position-y: 50%;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MODAL */
 
 .modal::backdrop {
-    background: rgb(0 0 0 /.3);
+  background: rgb(0 0 0 /0.3);
 }
 
 .modal {
-    padding: 1em;
-    max-width: 40ch;
-    border: 0;
-    background-color: hsl(50, 10%, 95%);
+  padding: 1em;
+  max-width: 40ch;
+  border: 0;
+  background-color: hsl(50, 10%, 95%);
 }
 
-.modal > h2, .modal > p {
-    text-align: center;
+.modal > h2,
+.modal > p {
+  text-align: center;
 }
 
 .modal > h2 {
-    padding-left: .5em;
-    padding-right: .5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .modal > p {
-    padding: 0 2em 1em 2em;
+  padding: 0 2em 1em 2em;
 }
 
 .offer {
-    text-align: center;
+  text-align: center;
 }
 
-.offer > p, .privacy {
-    text-decoration: underline;
+.offer > p,
+.privacy {
+  text-decoration: underline;
 }
 
 #email {
-    display: block;
-    width: 80%;
-    padding: 1em;
-    margin: auto;
-    outline: none;
-    border: 1px solid hsl(0,0%,85%);
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+  display: block;
+  width: 80%;
+  padding: 1em;
+  margin: auto;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 85%);
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .sign-up {
-    display: block;
-    padding: 1em 0 0 0;
-    margin: auto;
+  display: block;
+  padding: 1em 0 0 0;
+  margin: auto;
 }
 
 .signup-button {
-    width: 87%;
+  width: 87%;
 }
 
 /* BANNER */
 
 .top-banner {
-    background-color: black;
-    color: white;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: black;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* NAVBAR */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    font-size: 22px;
-    height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 22px;
+  height: 70px;
 }
 
 .navbar h1 {
-    font-weight: 600;
-    font-size: 26px;
+  font-weight: 600;
+  font-size: 26px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 /* MOBILE NAV */
 
 .menu-search {
-    display: flex;
-    align-items: center;
-    gap: .4em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
 }
 
 .person-cart {
-    display: flex;
-    align-items: center;
-    gap: .4em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
 }
 
 /* HERO */
 
 .hero-container {
-    background-image: url(/images/outdoor.jpg);
+  background-image: url(/images/outdoor.jpg);
 }
 
 .shop-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .shop-container h1 {
-    color: white;
-    font-size: 52px;
+  color: white;
+  font-size: 52px;
 }
 
 .shop-btn {
-    padding: 1em 3em 1em 3em;
-    border: none;
-    font-size: 18px;
-    background-color: hsl(50, 10%, 95%)
+  padding: 1em 3em 1em 3em;
+  border: none;
+  font-size: 18px;
+  background-color: hsl(50, 10%, 95%);
 }
 
 /* SHOP BY ROOM */
 
 .shop-wrapper h2 {
-    text-align: center;
-    margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .shop {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 1.5em;
-    gap: .5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 1.5em;
+  gap: 0.5em;
 }
 
 .shop-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .shop-item:hover {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
-.shop-item img, .design-item img, .inspiration img {
-    width: 100%;
-    height: 100%;
+.shop-item img,
+.design-item img,
+.inspiration img {
+  width: 100%;
+  height: 100%;
 }
 
 /* OUTDOOR FEATURE */
 
 .feature-container {
-    background-image: url(/images/outdoor-feature.jpg);
+  background-image: url(/images/outdoor-feature.jpg);
+  display: block;
+  padding-top: 5rem;
+  letter-spacing: 1px;
 }
 
-.outdoor-feature {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.feature-container h1 {
+  background-color: white;
+  font-weight: 200;
+  opacity: 0.7;
+  text-align: center;
 }
 
 /* OUTDOOR ESSENTIALS */
 
-.outdoor-container, .design {
-    padding: 1.5em;
+.outdoor-container,
+.design {
+  padding: 1.5em;
 }
 
-.essentials, .design {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: .5em;
+.essentials,
+.design {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5em;
 }
 
 .essentials h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .essentials img {
-    width: 100%;
+  width: 100%;
 }
 
 /* GARDEN */
 
 .garden-feature {
-    background-image: url(/images/botanicals.jpg);
-
+  background-image: url(/images/botanicals.jpg);
 }
 
 .garden-feature button {
-    width: 300px;
-    border: none;
+  width: 300px;
+  border: none;
 }
 
 /* NEW ARRIVALS */
 
 .new-arrivals-container {
-    padding: 1.5em;
+  padding: 1.5em;
 }
 
 .new-arrivals {
-    display: grid;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
+  display: grid;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .new-arrivals-items {
-    display: flex;
-    gap: .4rem;
+  display: flex;
+  gap: 0.4rem;
 }
 
 .new-arrivals-items img {
-    inline-size: 31%;
+  inline-size: 31%;
 }
 
 .new-arrivals-text-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .new-arrivals-text {
-    display: flex;
-    align-items: center;
-    gap: .5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .snaps-inline {
-    scroll-snap-type: inline mandatory;
+  scroll-snap-type: inline mandatory;
 }
-
 
 /* ORGANIZATION */
 
 .organization-container {
-    background-image: url(/images/organization.jpg);
+  background-image: url(/images/organization.jpg);
 }
 
 .organization-container h1 {
-    font-weight: 300;
-    color: white;
+  font-weight: 300;
+  color: white;
 }
 
 .organization-container button {
-    width: 300px;
-    border: none;
+  width: 300px;
+  border: none;
 }
 
 /* DESIGN */
 
 .design-item {
-    background-image: url(/images/tabletop.jpg);
+  background-image: url(/images/tabletop.jpg);
 }
 .design-item2 {
-    background-image: url(/images/registry.jpg);
+  background-image: url(/images/registry.jpg);
 }
 
 .design-item3 {
-    background-image: url(/images/home-design.jpg);
+  background-image: url(/images/home-design.jpg);
 }
 
 /* AWARD-WINNING */
 
 .award-container {
-    background-color: hsl(50, 10%, 95%);
-    padding: 1.5em;
-    text-align: center;
+  background-color: hsl(50, 10%, 95%);
+  padding: 1.5em;
+  text-align: center;
 }
 
 .award-container button {
-    width: 250px;
+  width: 250px;
 }
 
 /* INSPIRATION */
 
 .inspiration {
-    padding: 1.5em 1.5em 0 1.5em;
+  padding: 1.5em 1.5em 0 1.5em;
 }
 
 .inspiration-item-container {
-    overflow-x: auto;
-    padding-bottom: 1.5em;
+  overflow-x: auto;
+  padding-bottom: 1.5em;
 }
 
 .inspiration-item {
-    display: flex;
-    gap: .5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .inspiration-item img {
-    width: 40%;
-    height: 100%;
-    aspect-ratio: 11 / 9;
-    object-fit: cover;
+  width: 40%;
+  height: 100%;
+  aspect-ratio: 11 / 9;
+  object-fit: cover;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: hsl(50, 10%, 95%);
-    padding: 1.5em;
+  background-color: hsl(50, 10%, 95%);
+  padding: 1.5em;
 }
 
 .form-container h4 {
-    text-align: center;
+  text-align: center;
 }
 
 .input-items {
-    display: flex;
+  display: flex;
 }
 
 input {
-    font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .input-items button {
-    width: 30%;
-    background-color: hsl(0, 0%, 0%);
-    color: white;
-    border: none;
-    font-size: .9rem;
+  width: 30%;
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  border: none;
+  font-size: 0.9rem;
 }
