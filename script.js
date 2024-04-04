@@ -1,11 +1,18 @@
-const modal = document.querySelector(".modal")
-const openModal = document.querySelector(".open-button");
 const closeModal = document.querySelector(".close-button");
 
-openModal.addEventListener("click", () => {
-    modal.showModal();
-})
+window.addEventListener("scroll", openModal);
+
+function openModal() {
+  let storedState = sessionStorage.getItem("allowmodal");
+  if (!storedState) {
+    if (window.scrollY > 500) {
+      sessionStorage.setItem("allowmodal", "false");
+      window.removeEventListener("scroll", openModal);
+      $("#modal").modal("toggle");
+    }
+  }
+}
 
 closeModal.addEventListener("click", () => {
-    modal.close();
-})
+  modal.close();
+});
