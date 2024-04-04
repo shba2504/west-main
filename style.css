@@ -415,6 +415,10 @@ input {
   font-size: 0.8em;
 }
 
+[hidden] {
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .hero-container {
     animation: fade-out linear;
