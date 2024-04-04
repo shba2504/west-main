@@ -14,8 +14,6 @@
 <body>
     <header>
       <!-- MODAL -->
-        <!-- <button type="button" class="button open-button">open modal</button> -->
-
         <dialog class="modal" id="modal">
             <img src="/images/lightlivingroom.jpg" alt="modern living room with beige furniture" width="400" height="300">
             <h2>Save 10% On Your First Order</h2>
@@ -26,11 +24,12 @@
                     <div class="sign-up">
                      <button type="submit" class="signup-button">SIGN UP NOW</button>
                     </div>
-                    <p>Not now, thanks.</p>
+                    <div class="return-home">
+                      <button type="button" class="button close-button">Not now, thanks.</button>
+                    </div>
                 </form>
             </div>
             <p>*You can change your email preferences at any time. Read our <span class="privacy">privacy policy.</span></p>
-            <button type="button" class="button close-button">close</button>
         </dialog>
 
       <!-- PAGE BANNER-->
@@ -40,6 +39,7 @@
 
       <!-- NAVIGATION -->
         <nav>
+          <!-- MOBILE NAVBAR -->
           <div class="navbar">
             <div class="menu-search">
               <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -252,7 +252,7 @@
               <img src="/images/lightlivingroom.jpg" alt="living room with beige furniture and lots of wall pictures">
               <div class="input-items">
                 <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                <button type="submit">Submit</button>
+                <button type="submit" class="button open-button">Submit</button>
               </div>
             </div>
           </div>

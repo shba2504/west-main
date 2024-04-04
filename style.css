@@ -54,6 +54,7 @@ h2 {
   max-width: 40ch;
   border: 0;
   background-color: hsl(50, 10%, 95%);
+  scrollbar-width: none;
 }
 
 .modal > h2,
@@ -99,6 +100,12 @@ h2 {
   width: 87%;
 }
 
+.return-home button {
+  padding-top: 1em;
+  border: none;
+  text-decoration: underline;
+}
+
 /* BANNER */
 
 .top-banner {
@@ -134,16 +141,12 @@ a {
 
 /* MOBILE NAV */
 
-.menu-search {
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
-}
-
+.menu-search,
 .person-cart {
   display: flex;
   align-items: center;
   gap: 0.4em;
+  cursor: pointer;
 }
 
 /* HERO */
