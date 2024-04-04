@@ -14,7 +14,7 @@ button {
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
-button:hover:focus {
+button:focus {
   background-color: black;
   color: white;
 }
@@ -391,11 +391,13 @@ input {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hero-container {
+  .hero-container,
+  .feature-container,
+  .garden-feature,
+  .organization-container {
     animation: fade-out linear;
     animation-timeline: view();
     animation-range: exit;
-    border-radius: 20px;
   }
 
   @keyframes fade-out {
@@ -406,6 +408,17 @@ input {
     to {
       scale: 0.8;
       opacity: 0.6;
+    }
+  }
+
+  button:hover {
+    animation: enlarge linear;
+    animation-timeline: view();
+  }
+
+  @keyframes enlarge {
+    to {
+      scale: 1.2;
     }
   }
 }
