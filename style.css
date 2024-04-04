@@ -14,6 +14,11 @@ button {
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
+button:hover:focus {
+  background-color: black;
+  color: white;
+}
+
 h2 {
   font-weight: 200;
 }
@@ -383,4 +388,24 @@ input {
 
 .footer-links-container {
   border: 1px solid black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-container {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit;
+    border-radius: 20px;
+  }
+
+  @keyframes fade-out {
+    from {
+      scale: 1;
+      opacity: 1;
+    }
+    to {
+      scale: 0.8;
+      opacity: 0.6;
+    }
+  }
 }
