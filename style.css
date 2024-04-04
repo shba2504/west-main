@@ -255,7 +255,7 @@ a {
 /* NEW ARRIVALS */
 
 .new-arrivals-container {
-  padding: 1.5em;
+  padding: 0.5em 1.5em 2.2em 1.5em;
 }
 
 .new-arrivals {
@@ -293,6 +293,7 @@ a {
 
 .organization-container {
   background-image: url(/images/organization.jpg);
+  margin-bottom: 0.8em;
 }
 
 .organization-container h1 {
@@ -310,6 +311,7 @@ a {
 .design {
   display: grid;
   gap: 0.5em;
+  padding-bottom: 2.2em;
 }
 
 .design-item {
@@ -338,12 +340,12 @@ a {
 /* INSPIRATION */
 
 .inspiration {
-  padding: 1.5em 1.5em 0 1.5em;
+  padding: 1em 1.5em;
 }
 
 .inspiration-item-container {
   overflow-x: auto;
-  padding-bottom: 1.5em;
+  padding-bottom: 2.2em;
 }
 
 .inspiration-item {
@@ -362,7 +364,9 @@ a {
 
 footer {
   background-color: hsl(50, 10%, 95%);
-  padding: 1.5em;
+  padding: 1.5em 2.2em 0 2.2em;
+  display: block;
+  overflow-y: hidden;
 }
 
 .form-items p:nth-of-type(1) {
@@ -412,10 +416,7 @@ input {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hero-container,
-  .feature-container,
-  .garden-feature,
-  .organization-container {
+  .hero-container {
     animation: fade-out linear;
     animation-timeline: view();
     animation-range: exit;
