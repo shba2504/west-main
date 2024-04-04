@@ -26,6 +26,7 @@ h2 {
 .feature-container,
 .garden-feature,
 .organization-container {
+  background-color: black;
   background-position-x: 50%;
   background-position-y: 50%;
   width: 100%;
@@ -320,7 +321,7 @@ a {
 /* AWARD-WINNING */
 
 .award-container {
-  background-color: hsl(50, 10%, 95%);
+  background-color: hsl(150, 8%, 71%);
   padding: 1.5em;
   text-align: center;
 }
@@ -356,6 +357,7 @@ a {
 
 footer {
   background-color: hsl(50, 10%, 95%);
+  border: 1px solid black;
   padding: 1.5em;
 }
 
@@ -377,4 +379,8 @@ input {
   color: white;
   border: none;
   font-size: 0.9rem;
+}
+
+.footer-links-container {
+  border: 1px solid black;
 }
