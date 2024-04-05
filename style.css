@@ -153,6 +153,7 @@ a {
 
 .hero-container {
   background-image: url(/images/outdoor.jpg);
+  height: 700px;
 }
 
 .shop-container {
@@ -173,7 +174,7 @@ a {
   background-color: hsl(50, 10%, 95%);
 }
 
-/* SHOP BY ROOM */
+/* SHOP BY ROOM/DECOR */
 
 .shop-wrapper h2 {
   text-align: center;
@@ -185,6 +186,10 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 1.5em;
   gap: 0.5em;
+}
+
+.shop-decor {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .shop-item {
@@ -203,6 +208,10 @@ a {
 .inspiration img {
   width: 100%;
   height: 100%;
+}
+
+.guest {
+  display: none;
 }
 
 /* OUTDOOR FEATURE */
@@ -411,7 +420,7 @@ input {
 }
 
 .footer-links-container {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
 }
 
 .footer-policy {
@@ -420,6 +429,42 @@ input {
 
 [hidden] {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .shop {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .shop-decor {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .form-footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+
+  .footer-links-container {
+    display: flex;
+    gap: 2em;
+    border-bottom: none;
+    justify-content: center;
+  }
+
+  .store-icons {
+    display: flex;
+    gap: 1em;
+    border-top: 1px solid lightgray;
+    justify-content: flex-start;
+  }
+
+  .input-container img {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
