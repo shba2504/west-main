@@ -12,6 +12,7 @@ button {
   opacity: 0.8;
   letter-spacing: 1px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  border: none;
 }
 
 button:focus {
@@ -322,13 +323,31 @@ a {
 
 .design {
   display: grid;
+  grid-template-columns: repeat(minmax(150px, 1fr));
+  height: 1200px;
   gap: 0.5em;
   padding-bottom: 2.2em;
+}
+
+.design-item,
+.design-item2,
+.design-item3 {
+  background-size: cover;
+  background-position-x: 50%;
+  text-align: center;
+  padding-top: 0.5em;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+
+.design h2 {
+  font-size: 1.6rem;
 }
 
 .design-item {
   background-image: url(/images/tabletop.jpg);
 }
+
 .design-item2 {
   background-image: url(/images/registry.jpg);
 }
@@ -429,6 +448,13 @@ input {
 
 [hidden] {
   display: none;
+}
+
+@media (min-width: 660px) {
+  .design {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    height: 500px;
+  }
 }
 
 @media (min-width: 768px) {
