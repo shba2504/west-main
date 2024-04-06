@@ -17,6 +17,18 @@ body {
   border: 0 !important;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.2em 0.5em;
+}
+
+a:hover,
+a:focus {
+  background-color: hsl(150, 8%, 71%);
+  color: white;
+}
+
 button {
   padding: 0.5em 0 0.5em 0;
   width: 50%;
@@ -31,6 +43,10 @@ button {
 button:focus {
   background-color: black;
   color: white;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h2 {
@@ -154,11 +170,6 @@ h2 {
   gap: 0.4em;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 /* MOBILE NAV */
 
 .mobile-nav-toggle {
@@ -170,6 +181,22 @@ a {
 
 .primary-navigation {
   display: none;
+  position: absolute;
+  inset: 5.5em 0 0 0;
+  z-index: 999;
+  background-color: hsl(0, 0%, 100%);
+  width: 40%;
+  box-shadow: 0 0 0.75em rgb(0 0 0 / 0.05), 0 0 0 100vmax rgb(0 0 0 / 0.5);
+}
+
+.primary-navigation[data-visible] {
+  display: block;
+}
+
+.nav-list {
+  display: grid;
+  gap: 1.3em;
+  padding: 0.2em 1.5em;
 }
 
 .icon-close {
@@ -474,7 +501,6 @@ input {
 }
 
 .footer-links ul {
-  list-style-type: none;
   padding: 0;
 }
 
@@ -504,10 +530,6 @@ input {
 
   .primary-navigation {
     display: flex;
-  }
-
-  .primary-navigation ul {
-    list-style-type: none;
   }
 
   .shop {
