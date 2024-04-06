@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="primary-header">
       <!-- MODAL -->
         <dialog class="modal" id="modal">
             <img src="/images/lightlivingroom.jpg" alt="modern living room with beige furniture" width="400" height="300">
@@ -38,20 +38,52 @@
         </div>
 
       <!-- NAVIGATION -->
-        <nav>
-          <!-- MOBILE NAVBAR -->
-          <div class="navbar">
-            <div class="menu-search">
-              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      <div class="navbar-container">
+        <div class="navbar-wrapper">
+          <div class="menu-search">
+            <button class="mobile-nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+              <div class="icon-hamburger">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <div class="icon-close">
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <span class="visually-hidden">Menu</span>
+            </button>
+            <button type="button" class="search-btn">
               <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-            </div>
-            <h1>WEST & MAIN</h1>
-            <div class="person-cart">
-              <ion-icon name="person-circle-outline" aria-hidden="true"></ion-icon>
-              <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-            </div>
+            </button>
           </div>
-        </nav>
+          <nav class="primary-navigation">
+            <ul aria-label="Primary" class="nav-list" id="primary-navigation">
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Bath</a></li>
+              <li><a href="#">Bedding</a></li>
+              <li><a href="#">Decor & Pillows</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Inspiration</a></li>
+              <li><a href="#">Kitchen</a></li>
+              <li><a href="#">Outdoor</a></li>
+              <li><a href="#">Room Ideas</a></li>
+              <li><a href="#">Rugs</a></li>
+              <li><a href="#">Sale</a></li>
+              <li><a href="#">Storage</a></li>
+              <li><a href="#">Wall Decor & Mirrors</a></li>
+            </ul>
+          </nav>
+          <a href="#">
+            <img src="/logo.svg" alt="west and main" width="230" height="55">
+          </a>
+          <div class="person-cart">
+            <button type="button" class="person-btn">
+              <ion-icon name="person-circle-outline" aria-hidden="true"></ion-icon>
+            </button>
+            <button type="button" class="cart-btn">
+              <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </div>
+    </header>
 
       <!-- HERO -->
       <div class="hero-container">
@@ -60,7 +92,6 @@
             <button type="button" class="shop-btn">SHOP NOW</button>
         </div>
       </div>
-    </header>
 
     <main>
       
@@ -252,7 +283,9 @@
               <div class="input-container">
                 <img src="/images/lightlivingroom.jpg" alt="living room with beige furniture and lots of wall pictures">
                 <div class="input-items">
-                  <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                  <label for="email">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                  </label>
                   <button type="submit" class="button open-button">Submit</button>
                 </div>
               </div>
@@ -261,19 +294,23 @@
         <div class="footer-links-container">
           <div class="footer-links">
             <h4>Customer Service</h4>
-            <p>Contact Us</p>
-            <p>Track Your Order</p>
-            <p>Returns & Exchanges</p>
-            <p>Shipping Information</p>
-            <p>Help Topics</p>
-            <p>Email Preferences</p>
+            <ul>
+              <li>Contact Us</li>
+              <li>Track Your Order</li>
+              <li>Returns & Exchanges</li>
+              <li>Shipping Information</li>
+              <li>Help Topics</li>
+              <li>Email Preferences</li>
+            </ul>
           </div>
           <div class="footer-links">
             <h4>About Us</h4>
-            <p>Our Story</p>
-            <p>Locations</p>
-            <p>Careers</p>
-            <p>Free Design Services</p>
+            <ul>
+              <li>Our Story</li>
+              <li>Locations</li>
+              <li>Careers</li>
+              <li>Free Design Services</li>
+            </ul>
           </div>
         </div>
       </div>

@@ -4,6 +4,19 @@ body {
   font-weight: 300;
 }
 
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 button {
   padding: 0.5em 0 0.5em 0;
   width: 50%;
@@ -120,19 +133,25 @@ h2 {
 
 /* NAVBAR */
 
-.navbar {
+.navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  font-size: 22px;
-  height: 70px;
+  padding: 0 1.5em;
+  gap: 0.4em;
 }
 
-.navbar h1 {
-  font-weight: 600;
-  font-size: 26px;
+.navbar-wrapper button {
+  background: none;
+  font-size: 22px;
+}
+
+.menu-search,
+.person-cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4em;
 }
 
 a {
@@ -142,12 +161,19 @@ a {
 
 /* MOBILE NAV */
 
-.menu-search,
-.person-cart {
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
-  cursor: pointer;
+.mobile-nav-toggle {
+  display: block;
+  background: transparent;
+  border: 0;
+  font-size: 22px;
+}
+
+.primary-navigation {
+  display: none;
+}
+
+.icon-close {
+  display: none;
 }
 
 /* HERO */
@@ -411,6 +437,10 @@ footer {
   align-items: center;
 }
 
+.input-items #email {
+  width: 300px;
+}
+
 input {
   font-size: 0.9rem;
 }
@@ -438,6 +468,16 @@ input {
   font-size: 1.5rem;
 }
 
+.footer-links h4 {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .footer-links-container {
   border-bottom: 1px solid lightgray;
 }
@@ -450,7 +490,7 @@ input {
   display: none;
 }
 
-@media (min-width: 660px) {
+@media (max-width: 660px) {
   .design {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     height: 500px;
@@ -458,6 +498,18 @@ input {
 }
 
 @media (min-width: 768px) {
+  .icon-hamburger {
+    display: none;
+  }
+
+  .primary-navigation {
+    display: flex;
+  }
+
+  .primary-navigation ul {
+    list-style-type: none;
+  }
+
   .shop {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
