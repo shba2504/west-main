@@ -170,6 +170,11 @@ h2 {
   gap: 0.4em;
 }
 
+.logo:hover,
+.logo:focus {
+  background-color: white;
+}
+
 /* MOBILE NAV */
 
 .mobile-nav-toggle {
@@ -200,6 +205,10 @@ h2 {
 }
 
 .icon-close {
+  display: none;
+}
+
+.menu-search input {
   display: none;
 }
 
@@ -527,9 +536,36 @@ input {
   .icon-hamburger {
     display: none;
   }
+  
+  .search-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-search input {
+    display: flex;
+    outline: none;
+  }
 
   .primary-navigation {
     display: flex;
+  }
+
+  box-shadow: none;
+    justify-content: center;
+    width: 100%;
+    z-index: 0;
+    inset: 0;
+    position: relative;
+    padding-bottom: 0.5em;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    gap: 0;
   }
 
   .shop {
