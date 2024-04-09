@@ -160,7 +160,7 @@ h2 {
 
 .navbar-wrapper button {
   background: none;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 .menu-search,
@@ -171,18 +171,26 @@ h2 {
   gap: 0.4em;
 }
 
-.logo:hover,
-.logo:focus {
+.link-logo:hover,
+.link-logo:focus {
   background-color: white;
 }
 
-/* MOBILE NAV */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  width: 12em;
+}
 
 .mobile-nav-toggle {
   display: block;
   background: transparent;
   border: 0;
-  font-size: 22px;
+  font-size: 10em;
 }
 
 .primary-navigation {
@@ -201,7 +209,7 @@ h2 {
 
 .nav-list {
   display: grid;
-  gap: 1.3em;
+  gap: 1.5em;
   padding: 0.2em 1.5em;
 }
 
@@ -547,6 +555,7 @@ input {
     inset: 0;
     position: relative;
     padding-bottom: 0.5em;
+    width: 100%;
   }
 
   .nav-list {
