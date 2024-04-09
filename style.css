@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -187,7 +188,7 @@ h2 {
 .primary-navigation {
   display: none;
   position: absolute;
-  inset: 5.5em 0 0 0;
+  inset: 6.8em 0 0 0;
   z-index: 999;
   background-color: hsl(0, 0%, 100%);
   width: 40%;
@@ -385,8 +386,6 @@ h2 {
 
 .design {
   display: grid;
-  grid-template-columns: repeat(minmax(150px, 1fr));
-  height: 1200px;
   gap: 0.5em;
   padding-bottom: 2.2em;
 }
@@ -395,11 +394,10 @@ h2 {
 .design-item2,
 .design-item3 {
   background-size: cover;
-  background-position-x: 50%;
+  background-position-y: 20%;
+  height: 400px;
+  width: 100%;
   text-align: center;
-  padding-top: 0.5em;
-  border-top-right-radius: 5rem;
-  border-bottom-left-radius: 5rem;
 }
 
 .design h2 {
@@ -515,6 +513,7 @@ input {
 
 .footer-links-container {
   border-bottom: 1px solid lightgray;
+  padding-left: 1em;
 }
 
 .footer-policy {
@@ -523,13 +522,6 @@ input {
 
 [hidden] {
   display: none;
-}
-
-@media (max-width: 660px) {
-  .design {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    height: 500px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -551,7 +543,6 @@ input {
     display: flex;
     box-shadow: none;
     justify-content: center;
-    width: 100%;
     z-index: 0;
     inset: 0;
     position: relative;
@@ -572,6 +563,11 @@ input {
 
   .shop-decor {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .design {
+    display: flex;
+    background-position-x: 50%;
   }
 
   .form-footer-links {
