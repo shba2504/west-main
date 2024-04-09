@@ -536,7 +536,7 @@ input {
   .icon-hamburger {
     display: none;
   }
-  
+
   .search-btn {
     display: flex;
     align-items: center;
@@ -549,9 +549,7 @@ input {
 
   .primary-navigation {
     display: flex;
-  }
-
-  box-shadow: none;
+    box-shadow: none;
     justify-content: center;
     width: 100%;
     z-index: 0;
