@@ -13,11 +13,17 @@ closeModal.addEventListener("click", () => {
 // NAVBAR //
 
 const navToggle = document.querySelector(".mobile-nav-toggle");
+const burgerToggle = document.querySelector(".icon-hamburger");
 const primaryNav = document.querySelector(".primary-navigation");
 
 navToggle.addEventListener("click", () => {
-  primaryNav.hasAttribute("data-visible")
-    ? navToggle.setAttribute("aria-expanded", false)
-    : navToggle.setAttribute("aria-expanded", true);
+  burgerToggle.classList.toggle("active");
   primaryNav.toggleAttribute("data-visible");
 });
+
+document.querySelectorAll(".nav-list").forEach((n) =>
+  n.addEventListener("click", () => {
+    burgerToggle.classList.remove("active");
+    primaryNav.toggleAttribute("data-visible", false);
+  })
+);
