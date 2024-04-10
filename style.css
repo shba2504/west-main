@@ -196,7 +196,7 @@ h2 {
 .primary-navigation {
   display: none;
   position: absolute;
-  inset: 6.8em 0 0 0;
+  inset: 6.3em 0 0 0;
   z-index: 999;
   background-color: hsl(0, 0%, 100%);
   width: 40%;
@@ -209,7 +209,7 @@ h2 {
 
 .nav-list {
   display: grid;
-  gap: 1.5em;
+  gap: 1.3em;
   padding: 0.2em 1.5em;
 }
 
