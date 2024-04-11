@@ -249,7 +249,7 @@ h2 {
 /* HERO */
 
 .hero-container {
-  background-image: url(/images/outdoor.jpg);
+  background-image: url(./images/outdoor.jpg);
   height: 700px;
 }
 
@@ -314,7 +314,7 @@ h2 {
 /* OUTDOOR FEATURE */
 
 .feature-container {
-  background-image: url(/images/outdoor-feature.jpg);
+  background-image: url(./images/outdoor-feature.jpg);
   display: block;
   padding-top: 5rem;
   letter-spacing: 1px;
@@ -353,7 +353,7 @@ h2 {
 /* GARDEN */
 
 .garden-feature {
-  background-image: url(/images/botanicals.jpg);
+  background-image: url(./images/botanicals.jpg);
 }
 
 .garden-feature button {
@@ -401,7 +401,7 @@ h2 {
 /* ORGANIZATION */
 
 .organization-container {
-  background-image: url(/images/organization.jpg);
+  background-image: url(./images/organization.jpg);
   margin-bottom: 0.8em;
 }
 
@@ -438,15 +438,15 @@ h2 {
 }
 
 .design-item {
-  background-image: url(/images/tabletop.jpg);
+  background-image: url(./images/tabletop.jpg);
 }
 
 .design-item2 {
-  background-image: url(/images/registry.jpg);
+  background-image: url(./images/registry.jpg);
 }
 
 .design-item3 {
-  background-image: url(/images/home-design.jpg);
+  background-image: url(./images/home-design.jpg);
 }
 
 /* AWARD-WINNING */
