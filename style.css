@@ -281,7 +281,7 @@ h2 {
 .shop {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 1.5em;
+  padding: 1.5em 3em;
   gap: 0.5em;
 }
 
@@ -331,7 +331,7 @@ h2 {
 
 .outdoor-container,
 .design {
-  padding: 1.5em;
+  padding: 1.5em 3em;
 }
 
 .essentials {
@@ -364,7 +364,7 @@ h2 {
 /* NEW ARRIVALS */
 
 .new-arrivals-container {
-  padding: 0.5em 1.5em 2.2em 1.5em;
+  padding: 0.5em 3em 2.2em 3em;
 }
 
 .new-arrivals {
@@ -464,7 +464,7 @@ h2 {
 /* INSPIRATION */
 
 .inspiration {
-  padding: 1em 1.5em;
+  padding: 1em 3em;
 }
 
 .inspiration-item-container {
@@ -488,7 +488,7 @@ h2 {
 
 footer {
   background-color: hsl(50, 10%, 95%);
-  padding: 1.5em 2.2em 0 2.2em;
+  padding: 1.5em 3em 0 3em;
   display: block;
   overflow-y: hidden;
 }
