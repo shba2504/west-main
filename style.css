@@ -281,7 +281,7 @@ h2 {
 .shop {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 1.5em 3em;
+  padding: 1.5em 2em;
   gap: 0.5em;
 }
 
@@ -336,12 +336,13 @@ h2 {
 
 .essentials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.5em;
 }
 
 .essentials h2 {
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .essentials img {
@@ -379,7 +380,7 @@ h2 {
 }
 
 .new-arrivals-items img {
-  inline-size: 29%;
+  inline-size: 45%;
 }
 
 .new-arrivals-text-container {
@@ -593,15 +594,27 @@ input {
 
   .shop {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 1.5em 5em;
   }
 
   .shop-decor {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 
+  .outdoor-container,
+  .design,
+  .new-arrivals-container,
+  .inspiration {
+    padding: 1.5em 4.5em;
+  }
+
   .design {
     display: flex;
     background-position-x: 50%;
+  }
+
+  .new-arrivals-items img {
+    max-inline-size: 30%;
   }
 
   .form-footer-links {
