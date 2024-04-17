@@ -273,6 +273,7 @@ h2 {
   padding: 1em 3em 1em 3em;
   border: none;
   font-size: 18px;
+  width: 60%;
   background-color: hsl(50, 10%, 95%);
 }
 
@@ -434,6 +435,8 @@ h2 {
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
+  padding-left: 1em;
+  padding-right: 1em;
   height: 500px;
   width: 100%;
   text-align: center;
@@ -645,6 +648,24 @@ input {
 
   .input-container img {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-items #email {
+    width: 100%;
+  }
+
+  .store-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-search,
+  .search-btn,
+  .person-cart {
+    gap: 0.4em;
   }
 }
 
