@@ -432,7 +432,8 @@ h2 {
 .design-item2,
 .design-item3 {
   background-size: cover;
-  background-position-y: 20%;
+  background-position-y: center;
+  background-position-x: center;
   height: 500px;
   width: 100%;
   text-align: center;
