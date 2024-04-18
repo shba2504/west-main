@@ -604,10 +604,6 @@ input {
     padding: 1.5em 5em;
   }
 
-  .shop-decor {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-
   .outdoor-container,
   .design,
   .new-arrivals-container,
