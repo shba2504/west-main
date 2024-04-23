@@ -570,7 +570,7 @@ input {
 }
 
 @media (min-width: 680px) {
-  .shop-room:nth-of-type(9) {
+  .shop-item:nth-of-type(9) {
     display: flex;
   }
 }
