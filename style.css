@@ -313,6 +313,10 @@ h2 {
   height: 100%;
 }
 
+.shop-item:nth-of-type(9) {
+  display: none;
+}
+
 .guest {
   display: none;
 }
@@ -565,6 +569,12 @@ input {
   display: none;
 }
 
+@media (min-width: 680px) {
+  .shop-room:nth-of-type(9) {
+    display: flex;
+  }
+}
+
 @media (min-width: 768px) {
   .icon-hamburger {
     display: none;
@@ -602,6 +612,10 @@ input {
   .shop {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     padding: 1.5em 5em;
+  }
+
+  .shop-item:nth-of-type(9) {
+    display: none;
   }
 
   .outdoor-container,
@@ -643,6 +657,18 @@ input {
   }
 
   .input-container img {
+    display: none;
+  }
+}
+
+@media (min-width: 1016px) {
+  .shop-item:nth-of-type(9) {
+    display: flex;
+  }
+}
+
+@media (min-width: 1304px) {
+  .shop-item:nth-of-type(9) {
     display: none;
   }
 }
